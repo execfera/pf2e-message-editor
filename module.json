@@ -31,17 +31,7 @@
   "bugs": "https://github.com/execfera/pf2e-message-editor/issues",
   "changelog": "https://github.com/execfera/pf2e-message-editor/blob/master/CHANGELOG.md",
   "relationships": {
-    "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
-        "compatibility": {
-          "minimum": "5.11.5",
-          "verified": "6.0.2"
-        }
-      }
-    ],
+    "systems": [],
     "requires": []
   }
 }
