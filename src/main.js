@@ -47,7 +47,7 @@ class MessageEditor extends FormApplication {
 
 Hooks.on("renderChatMessage", async (message, html) => {
     if (!game.user.isGM && !message.isAuthor) {return}
-    html.find('.message-metadata .message-delete').before(`<a aria-label="Edit" class="message-edit"><i class="fas fa-edit"></i></a>`)
+    html.find('.message-metadata .message-timestamp').after(`<a aria-label="Edit" class="message-edit"><i class="fas fa-edit"></i></a>`)
 
     html.on('click', '.message-metadata .message-edit', function() {
         new MessageEditor({message}).render(true)
